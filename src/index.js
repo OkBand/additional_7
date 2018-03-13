@@ -67,7 +67,7 @@ for(i = 0; i < length;) {
   col = emptyCells[i][1];
   number = matrix[row][col] + 1;
   solved = false;
-  while((solved === false) && (number <= 9)) {
+  while(solved === false) {
     if(checkRow(matrix, row, number) && checkCol(matrix, col, number) && checkSquare(matrix, col, row, number)) {
       solved = true;
       matrix[row][col] = number;
